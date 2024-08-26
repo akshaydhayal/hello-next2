@@ -19,6 +19,7 @@ export default function Home() {
     fetchProducts();
   }, []);
 
+  
   useEffect(() => {
     async function fetchResult() {
       const response = await fetch(`api/hello`, {
