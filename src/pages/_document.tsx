@@ -14,7 +14,7 @@ export default function Document() {
           content="default-src 'self'; 
              script-src 'self' 'unsafe-eval'; 
              style-src 'self' 'unsafe-inline'; 
-             img-src img-src 'self' blob: data: https://cdn.dummyjson.com/ https://ipfs.dscvr.one https://media.dscvr.one https://media1.stg.dscvr.one; 
+             img-src 'self' https://cdn.dummyjson.com/ https://ipfs.dscvr.one https://media.dscvr.one https://media1.stg.dscvr.one data:; 
              connect-src 'self' https://dummyjson.com/ https://api.dscvr.one https://api1.stg.dscvr.one https://*.helius-rpc.com ; 
              font-src 'self';
              "
