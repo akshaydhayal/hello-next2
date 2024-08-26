@@ -9,13 +9,16 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="dscvr:canvas:version" content="vNext" />
 
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="default-src 'self'; 
              script-src 'self' 'unsafe-eval'; 
              style-src 'self' 'unsafe-inline'; 
-             img-src 'self' https://cdn.dummyjson.com/ https://my-canvas.com/* data:; 
+             img-src * 'self' data: https: https://cdn.dummyjson.com/ https://my-canvas.com/*; 
              connect-src 'self' https://dummyjson.com/ https://api.dscvr.one https://api1.stg.dscvr.one https://*.helius-rpc.com ; 
              font-src 'self';
-             "/>
+             "
+        />
       </Head>
       <body>
         <Main />
